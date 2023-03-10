@@ -1,0 +1,11 @@
+com\example\hogwarts\HelloController.class
+com\example\hogwarts\House$HouseType.class
+com\example\hogwarts\WizardConfiguration.class
+com\example\hogwarts\HelloController$1.class
+com\example\hogwarts\AddWizardController.class
+com\example\hogwarts\WizardDAO.class
+com\example\hogwarts\HelloApplication.class
+com\example\hogwarts\House.class
+module-info.class
+com\example\hogwarts\Wizard.class
+com\example\hogwarts\WizardDAOImpl.class

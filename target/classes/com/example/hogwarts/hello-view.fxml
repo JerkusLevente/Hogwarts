@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hogwarts.HelloController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false">
+               <graphic>
+                  <Button mnemonicParsing="false" onAction="#onAddNewWizard" text="Add New Wizard/Witch" />
+               </graphic></Menu>
+            <Menu mnemonicParsing="false">
+               <graphic>
+                  <Button mnemonicParsing="false" onAction="#onExit" text="Exit" />
+               </graphic>
+            </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="List of Wizards and Witches">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <TableView fx:id="wizardTable" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                        <TableColumn fx:id="nameColumn" prefWidth="179.0" text="Name" />
+                        <TableColumn fx:id="heightColumn" prefWidth="195.0" text="Height (cm)" />
+                        <TableColumn fx:id="pureBloodColumn" minWidth="0.0" prefWidth="124.0" text="PureBlood" />
+                        <TableColumn fx:id="houseIdColumn" minWidth="0.0" prefWidth="124.0" text="House" />
+                        <TableColumn fx:id="editColumn" minWidth="0.0" prefWidth="124.0" text="House" />
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+    </center>
+   <bottom>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#listRavenclaw" text="Ravenclaw" GridPane.columnIndex="3" />
+            <Button mnemonicParsing="false" onAction="#listSyltherin" text="Slytherin" GridPane.columnIndex="4" />
+            <Button mnemonicParsing="false" onAction="#listHufflepuff" text="Hufflepuff" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" onAction="#listGryffindor" text="Gryffindor" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onAction="#listAll" text="All" />
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>
