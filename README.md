@@ -4,6 +4,6 @@ Maven based desktop application that allows the user to track their register of 
 
 ## Technologies used
 
-- **.NET Core**
-- **Java** 
+- **Java**
+- **JavaFX** 
 - **Maven**
